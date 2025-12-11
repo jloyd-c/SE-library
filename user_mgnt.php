@@ -281,6 +281,7 @@
 		</div>              
 	</div>
 	<?php
+	if(isset($_GET['msg'])) {
 		if($_GET['msg']==1){
 			echo "<script type='text/javascript'>showNotification('top','right','Please select atleast one section!', 'warning');</script>";
 		}
@@ -308,6 +309,7 @@
 		if($_GET['msg']==9){
 			echo "<script type='text/javascript'>showNotification('top','right','Duplicate Role Name!', 'warning');</script>";
 		}
+	}
 	?>
 </div>
 <!-- MAIN CONTENT ENDS -->

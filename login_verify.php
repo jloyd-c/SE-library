@@ -13,7 +13,7 @@
 
 	$ftime = strtotime("12:00:00");
 	$stime = strtotime("17:00:00");
-	$ltime = strtotime(now);
+	$ltime = strtotime('now');
 
 	if($ftime > $ltime){
 		$_SESSION['t'] = "Morning";

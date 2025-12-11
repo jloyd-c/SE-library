@@ -1,7 +1,7 @@
 <?php
 	$servername = "localhost";
 	$username = "root";
-	$password = "admin2022";
+	$password = "";
 	$db = "lib";
 	$koha = "koha_library";
 	$conn = mysqli_connect($servername, $username, $password, $db);

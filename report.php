@@ -191,7 +191,7 @@
 			</div>
 			<?php
 				} //end of datewise
-				if ($flag == "Short") {
+				if (isset($flag) && $flag == "Short") {
 			?>
 					<div class="col-md-6 ml-auto mr-auto">
 						<div class="card">
@@ -241,7 +241,7 @@
 					</div>
 			<?php
 				} //end of studentwise short report
-				if ($flag == "Detail") {
+				if (isset($flag) && $flag == "Detail") {
 			?>
 				<div class="col-md-12">
 					<div class="card">

@@ -96,6 +96,7 @@
 </div>
 <!-- MAIN CONTENT ENDS -->
 <?php
+if(isset($_GET['msg'])){
 	if($_GET['msg']==1){
     echo "<script type='text/javascript'>showNotification('top','right','Notice Added and Activated', 'success');</script>";
   }
@@ -103,6 +104,7 @@
   if($_GET['msg']==2){
     echo "<script type='text/javascript'>showNotification('top','right','Status Updated', 'success');</script>";
   }
+}
 	require_once "./template/footer.php";
 	// ob_end_flush();
 ?>

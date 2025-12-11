@@ -22,6 +22,7 @@
 </script>
 <!-- MAIN CONTENT ENDS -->
 <?php
+if(isset($_GET['msg'])) {
     if($_GET['msg']=="Evening"){
       echo "<script type='text/javascript'>showNotification('top','right','Good Evening ".$_SESSION['user_name']."', 'info');</script>";
     }
@@ -31,6 +32,7 @@
     if($_GET['msg']=="Noon"){
       echo "<script type='text/javascript'>showNotification('top','right','Good After Noon ".$_SESSION['user_name']."', 'info');</script>";
     }
+}
 	require_once "./template/footer.php";
 	ob_end_flush();
 ?>

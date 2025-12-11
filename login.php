@@ -124,14 +124,16 @@
     <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
     <script src="assets/js/material-dashboard.min.js?v=2.0.2" type="text/javascript"></script>
     <?php
-    if($_GET['msg']==1){
-      echo "<script type='text/javascript'>showNotification('top','right','Wrong Username/Password.', 'danger');</script>";
-    }
-    if($_GET['msg']==2){
-      echo "<script type='text/javascript'>showNotification('top','right','Successfully Logout.', 'info');</script>";
-    }
-    if($_GET['msg']==3){
-      echo "<script type='text/javascript'>showNotification('top','right','User Deactivated. Contact Administrator.', 'warning');</script>";
+    if(isset($_GET['msg'])){
+        if($_GET['msg']==1){
+          echo "<script type='text/javascript'>showNotification('top','right','Wrong Username/Password.', 'danger');</script>";
+        }
+        if($_GET['msg']==2){
+          echo "<script type='text/javascript'>showNotification('top','right','Successfully Logout.', 'info');</script>";
+        }
+        if($_GET['msg']==3){
+          echo "<script type='text/javascript'>showNotification('top','right','User Deactivated. Contact Administrator.', 'warning');</script>";
+        }
     }
     ?>
     

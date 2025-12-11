@@ -70,7 +70,7 @@
     </script>
 
     <?php
-      if($table){
+      if(isset($table) && $table){
     ?>
         <script>
           $(document).ready(function() {

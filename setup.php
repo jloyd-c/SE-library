@@ -223,12 +223,14 @@
 </div>
 <!-- MAIN CONTENT ENDS -->
 <?php
+if(isset($_GET['msg'])) {
 	if($_GET['msg']=="1"){
     echo "<script type='text/javascript'>showNotification('top','right','Basic Informtion Updated Successfully', 'success');</script>";
   }
   if($_GET['msg']=="2"){
     echo "<script type='text/javascript'>showNotification('top','right','Location Added Successfully', 'success');</script>";
   }
+}
 	require_once "./template/footer.php";
 	// ob_end_flush();
 ?>
