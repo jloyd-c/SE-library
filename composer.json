@@ -1,0 +1,11 @@
+{
+    "name": "jhonl/inout",
+    "autoload": {
+        "psr-4": {
+            "Jhonl\\Inout\\": "src/"
+        }
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.3"
+    }
+}
